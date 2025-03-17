@@ -2,6 +2,7 @@
     background-color: white;
     position: sticky;
     top: 20px;
+    z-index: 100;
 }
 h1 {
     color:rgb(0, 91, 0);
@@ -54,7 +55,6 @@ p{
     justify-content: center;
 }
 
-
 #b_about, #b_mission, #b_history, #b_schools, #b_students, #b_resources, #b_contacts{
     padding: 10px 15px;
     font-size: 20px;
@@ -75,34 +75,38 @@ p{
     text-decoration-color: rgb(0, 90, 44);
     transition-duration: 0.1s;
 }
+#front_page_info {
+    display: flex;
+    position: relative;
+    top: 1200px;
+    left: 800px;
+}
 
-#mission_text, #history_text, #students_text, #resources_text, #contacts_text {
+#mission_text, #history_text, #students_text, #resources_text_students_1, #resources_text_students_2, #contacts_text {
     display: none;
     flex-direction: column;
     margin-right: 15px;
     background-color: bisque;
     border-radius: 15px;
-    margin-top: 5px;
+    margin-bottom: 15px;
 }
 #about_text {
     display: "flex";
     margin: auto; /*change from margin-right: 15px*/
-    margin-top: 5px;
 }
 
 #english_education, #teaching, #teaching_jobs, #food_aid, #medical_aid, #emotional_care, #schools_and_chapters, #teach_remotely, #fundraise, #spread_awareness, #teach_and_serve, #tassel_origins{ 
     display: none;
     background-color: bisque;
     border-radius: 15px;
-    padding-top: 25px;
 }
 
 #schools_text {
     display: "flex";
     margin: auto;
-    margin-top: -10px;
     flex-direction: column;
 }
+
 #big_heading_what_chapters_do{
     display: none;
     max-width: fit-content;
@@ -116,19 +120,120 @@ p{
     margin-bottom: -15px;
 }
 
-#heading_paee, #heading_t, #heading_tj, #heading_fa, #heading_ma, #heading_ec, #mission_heading, #history_heading, #heading_schools_and_chapters, #heading_teach_remotely, #heading_fundraise, #heading_spread_awareness, #heading_teach_and_serve, #heading_tassel_origins {
+#heading_paee, #heading_t, #heading_tj, #heading_fa, #heading_ma, #heading_ec, #mission_heading, #history_heading, #heading_schools_and_chapters, #heading_teach_remotely, #heading_fundraise, #heading_spread_awareness, #heading_teach_and_serve, #heading_tassel_origins, #heading_students, #heading_resources_students, #heading_contacts_text{
     display: none;
     margin-bottom: -15px;
+}
+
+.statistics_container {
+    display: flex;
+    padding: 20px;
+    margin: 15px;
+    flex-direction: column;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 1020px;
+    width: 94%;
+    height: 90%;
+}
+
+#heading_national_high_school_graduation_exam_pass_rate {
+    display: none;
+    border-radius: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 65px;
+    margin-bottom: -100px;
+    position: absolute;
+    color: transparent;
+    -webkit-text-stroke: 1px #000000; /*outlines text in black*/
+    background-image: linear-gradient(#ceffd6, #ceffd6);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text; /*makes background only within the letter boundaries*/
+    background-position: -1420px 0px;
+    animation-name: backcolor;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+
+}
+@keyframes backcolor{
+    100%{
+        background-position: 0 0px;
+    }
+}
+
+
+h4 {
+    font-size: 35px;
+    text-decoration: underline;
+}
+h5 {
+    font-size: 50px;
+    background-color: rgb(211, 177, 211);
+    border-radius: 15px;
+    padding: 10px;
+    line-height: 80px;
+    margin-bottom: 10px;
+    
+}
+#years {
+    display: none;
+    background-color: rgb(83, 204, 138);
+    border-radius: 15px;
+    padding: 20px;
+    padding-bottom: 100px;
+    flex-direction: column;
+    margin-top: 20px;
+    line-height: 175px;
+}
+#types_of_students {
+    display: none;
+    padding: 20px;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    bottom: 570px;
 }
 
 .information {
     display: "flex";
     letter-spacing: 0.2px;
     text-align: left;
-    width: 46%; /*WHAT THE HECKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK*/
+    width: 46%; 
     /*justify-content: right; horizontal alignment*/
     margin-left: auto;
     margin-right: 50px;
+}
+
+.resources_buttons {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+}
+
+#speaking, #listening, #reading, #writing {
+    display: none;
+    color: black;
+    background-color: rgb(180, 255, 210);
+    text-decoration: none;
+    border-radius: 5px;
+    border-style: hidden;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: fit-content;
+    padding: 15px;
+    margin: 10px;
+}
+
+#speaking:hover, #listening:hover, #reading:hover, #writing:hover {
+    border-color: black;
+    border-style: groove;
+    border-width: 3px;
+    text-decoration-line: underline;
+    transition-duration: 0.1s;
 }
 
 .arrows_slideshow{
@@ -163,7 +268,7 @@ p{
     left: 94.5%;
  }
 
-img{
+.img{
     display: none;
     position: absolute; /*moves with scrolling*/
     margin: 15px;
@@ -172,9 +277,9 @@ img{
     z-index: -1; /*allows something to overlay on top of image element --> image goes into "background"*/
     width: 46%;
     margin-left: 50px;
-    height: auto;
-    
+    height: auto; 
 }
+
 #khmer_rouge_in_city {
     top: 595px;
 }
@@ -183,4 +288,72 @@ img{
 }
 #two_students_smiling{
     top: 665px;
+}
+
+#joji_and_teachers{
+    top: 700px;
+    width: 25.5%;
+}
+#two_boys{
+    top: 700px;
+    left: 382px;
+    width: 20%;
+}
+
+table {
+    justify-self: center;
+    position: absolute;
+    width: fit-content;
+    border: 3px, solid, black;
+    border-radius: 15px;
+    background-color: rgb(158, 219, 158);
+    font-family: "American Typewriter", serif;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+#table_1{
+    display: none;
+    top: 43pc;
+    /*left: 9%;*/
+    background-color: rgb(158, 219, 158);
+}
+#table_2{
+    display: none;
+    top: 92pc;
+    /*left: 9%;*/
+    background-color: rgb(238, 206, 236);
+}
+th {
+    text-align: left;
+    font-size: 25px;
+    text-decoration: underline;
+}
+td {
+    border: black;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: beige;
+}
+#email_form {
+    display: none;
+    position: absolute;
+    top: 43pc;
+    left: 75pc;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(255, 150, 238);
+    color: black;
+    border-radius: 15px;
+    border: 3px solid rgb(250, 0, 200);
+    padding: 30px 20px;
+    transition-duration: 0.2s;
+}
+#email_form:hover{
+    text-decoration: underline;
+    background-image: linear-gradient(to right, rgb(255, 150, 238), rgb(158, 219, 158));
+    font-size: 23px;
+    font-weight: 550;
+    border: 3px solid;
+    border-color: black;
 }

@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Red Hat Display";
+    background: linear-gradient(to right bottom, rgb(183, 255, 217), rgb(30, 191, 33));
+    padding: 25px;
+}
+.contact_container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    margin-left: 5%;
+}
+
+.contact textarea {
+    height: 140px; 
+    padding-top: 25px;
+    border-radius: 20px;
+}
+
+.contact_title h2{
+    font-size: 45px;
+    width: 400px;
+    font-weight: 600;
+    color: rgb(255, 105, 235);
+    /*-webkit-text-stroke: 0.01px rgb(213, 0, 184);*/
+    margin-bottom: 5px;
+}
+.contact_title hr{
+    border: none;
+    width: 165px;
+    height: 5px;
+    background-color: rgb(255, 105, 235);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.right_side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+img{
+    width: 65%;
+    border-radius: 20px;
+}
+.contact_inputs {
+ width: 400px;
+ height: 50px;
+ border: none;
+ outline: none;
+ padding-left: 25px;
+ font-weight: 500;
+ color: gray;
+ border-radius: 50px;
+ font-family: "Red Hat Display";
+}
+.contact_inputs:focus {
+    border: 2px solid rgb(255, 105, 235);
+}
+.contact_inputs::placeholder {
+    color: rgb(189, 189, 189);
+}
+.contact button, #button_go_back {
+    display: flex; 
+    align-items: center; 
+    font-family: "Red Hat Display";
+    padding: 15px 30px; 
+    font-size: 15px;
+    color: white;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background:linear-gradient(to right, rgb(255, 200, 251),rgb(255, 105, 235));
+    cursor: pointer;
+    text-decoration: none;
+}
+ @media (max-width: 800px) {
+    .contact-inputs {
+        width: 80vw;
+    }
+    .right_side {
+        display: none;
+    }
+ }

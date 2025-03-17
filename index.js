@@ -7,9 +7,23 @@ function aboutTextDisplay(about_index){
     mission_heading.style.display = "none";
     history_text.style.display = "none";
     history_heading.style.display = "none";
+    heading_students.style.display = "none";
     students_text.style.display = "none";
-    resources_text.style.display = "none";
+    heading_national_high_school_graduation_exam_pass_rate.style.display = "none";
+    years.style.display = "none";
+    types_of_students.style.display = "none";
+    resources_text_students_1.style.display = "none";
+    resources_text_students_2.style.display = "none";
+    button_speaking.style.display = "none";
+    button_listening.style.display = "none";
+    button_reading.style.display = "none";
+    button_writing.style.display = "none";
+    heading_resources_students.style.display = "none";
     contacts_text.style.display = "none";
+    table_leaders.style.display = "none";
+    table_chapters.style.display = "none";
+    heading_contacts_text.style.display = "none";
+    email_form.style.display= "none";
     right_arrow_about.style.display = "none";
     left_arrow_about.style.display = "none";
     right_arrow_schools.style.display = "none";
@@ -36,9 +50,23 @@ function aboutTextDisplay(about_index){
     mission_heading.style.display = "none";
     history_text.style.display = "none";
     history_heading.style.display = "none";
+    heading_students.style.display = "none";
     students_text.style.display = "none";
-    resources_text.style.display = "none";
+    heading_national_high_school_graduation_exam_pass_rate.style.display = "none";
+    years.style.display = "none";
+    types_of_students.style.display = "none";
+    resources_text_students_1.style.display = "none";
+    resources_text_students_2.style.display = "none";
+    button_speaking.style.display = "none";
+    button_listening.style.display = "none";
+    button_reading.style.display = "none";
+    button_writing.style.display = "none";
+    heading_resources_students.style.display = "none";
     contacts_text.style.display = "none";
+    table_leaders.style.display = "none";
+    table_chapters.style.display = "none";
+    heading_contacts_text.style.display = "none";
+    email_form.style.display= "none";
     right_arrow_about.style.display = "none";
     left_arrow_about.style.display = "none";
     right_arrow_schools.style.display = "none";
@@ -77,9 +105,23 @@ function aboutTextDisplay(about_index){
     mission_heading.style.display = "none";
     history_text.style.display = "none";
     history_heading.style.display = "none";
+    heading_students.style.display = "none";
     students_text.style.display = "none";
-    resources_text.style.display = "none";
+    heading_national_high_school_graduation_exam_pass_rate.style.display = "none";
+    years.style.display = "none";
+    types_of_students.style.display = "none";
+    resources_text_students_1.style.display = "none";
+    resources_text_students_2.style.display = "none";
+    button_speaking.style.display = "none";
+    button_listening.style.display = "none";
+    button_reading.style.display = "none";
+    button_writing.style.display = "none";
+    heading_resources_students.style.display = "none";
     contacts_text.style.display = "none";
+    table_leaders.style.display = "none";
+    table_chapters.style.display = "none";
+    heading_contacts_text.style.display = "none";
+    email_form.style.display= "none";
     right_arrow_about.style.display = "none";
     left_arrow_about.style.display = "none";
     right_arrow_schools.style.display = "none";
@@ -114,6 +156,11 @@ function imageDisplay(image){
     students_waving.style.display = "none";
     teacher_and_mother_reunion.style.display = "none";
     student_running_through_arms.style.display = "none";
+    khmer_teachers.style.display = "none";
+    joji_and_teachers.style.display = "none";
+    two_boys.style.display = "none";
+    swing.style.display = "none";
+    joji_hugs_a_student.style.display = "none";
 
 
     image.style.display = "flex";
@@ -169,6 +216,8 @@ function leftArrowClick(gallery){
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //HTML ELEMENTS
+//front page
+
 
 //about
 let about_button = document.getElementById("b_about");
@@ -272,16 +321,23 @@ schoolsTextsHeadings[5] = heading_tassel_origins;
 //students
 let students_button = document.getElementById("b_students");
 let students_text = document.getElementById("students_text");
-
+let heading_students = document.getElementById("heading_students");
+let heading_national_high_school_graduation_exam_pass_rate = document.getElementById("heading_national_high_school_graduation_exam_pass_rate");
+let years = document.getElementById("years");
+let types_of_students = document.getElementById("types_of_students");
 
 //resources
 let resources_button = document.getElementById("b_resources");
-let resources_text = document.getElementById("resources_text");
-
+let resources_text_students_1 = document.getElementById("resources_text_students_1");
+let resources_text_students_2 = document.getElementById("resources_text_students_2");
+let heading_resources_students = document.getElementById("heading_resources_students");
 
 //contacts
 let contacts_button = document.getElementById("b_contacts");
 let contacts_text = document.getElementById("contacts_text");
+let heading_contacts_text = document.getElementById("heading_contacts_text");
+    //send a message option - contact form
+let email_form = document.getElementById("email_form");
 
 
 //images + gallery (array)
@@ -329,10 +385,23 @@ schools_gallery[5] = student_running_through_arms;
 
 
     //students
-let in_a_pond = document.getElementById("in_a_pond");
+//let in_a_pond = document.getElementById("in_a_pond");
+let khmer_teachers = document.getElementById("khmer_teachers");
+let joji_and_teachers = document.getElementById("joji_and_teachers");
+let two_boys = document.getElementById("two_boys");
     //resources
+let swing = document.getElementById("swing");
+let button_speaking = document.getElementById("speaking");
+let button_listening = document.getElementById("listening");
+let button_reading = document.getElementById("reading");
+let button_writing = document.getElementById("writing");
 
     //contacts
+let joji_hugs_a_student = document.getElementById("joji_hugs_a_student");
+let table_chapters = document.getElementById("table_1");
+let table_leaders = document.getElementById("table_2");
+
+
 
 //arrows
 let right_arrow_about = document.getElementById("right_arrow_about");
@@ -375,7 +444,6 @@ history_button.addEventListener("click", displayAtSameTime.bind(this, khmer_roug
 history_button.addEventListener("click", displayAtSameTime.bind(this, khmer_rouge_soldiers));
 
 image_index = 0;
-//console.log("image_index is = "+image_index);
 schools_button.addEventListener("click", schoolsTextsDisplay.bind(this, image_index));
 schools_button.addEventListener("click", imageDisplay.bind(this, girl_waiting_in_line));
 schools_button.addEventListener("click", displayAtSameTime.bind(this, left_arrow_schools));
@@ -388,8 +456,29 @@ left_arrow_schools.addEventListener("click", displayAtSameTime.bind(this, left_a
 left_arrow_schools.addEventListener("click", displayAtSameTime.bind(this, right_arrow_schools));
 
 students_button.addEventListener("click", display.bind(this, students_text));
+students_button.addEventListener("click", displayAtSameTime.bind(this, heading_students));
+students_button.addEventListener("click", imageDisplay.bind(this, khmer_teachers));
+students_button.addEventListener("click", displayAtSameTime.bind(this, joji_and_teachers));
+students_button.addEventListener("click", displayAtSameTime.bind(this, two_boys));
+students_button.addEventListener("click", displayAtSameTime.bind(this, heading_national_high_school_graduation_exam_pass_rate));
+students_button.addEventListener("click", displayAtSameTime.bind(this, years));
+students_button.addEventListener("click", displayAtSameTime.bind(this, types_of_students));
 
-resources_button.addEventListener("click", display.bind(this, resources_text));
+resources_button.addEventListener("click", display.bind(this, resources_text_students_1));
+resources_button.addEventListener("click", displayAtSameTime.bind(this, resources_text_students_2));
+resources_button.addEventListener("click", displayAtSameTime.bind(this, heading_resources_students));
+resources_button.addEventListener("click", displayAtSameTime.bind(this, button_listening));
+resources_button.addEventListener("click", displayAtSameTime.bind(this, button_reading));
+resources_button.addEventListener("click", displayAtSameTime.bind(this, button_speaking));
+resources_button.addEventListener("click", displayAtSameTime.bind(this, button_writing));
+
+resources_button.addEventListener("click", imageDisplay.bind(this, swing));
+
 
 contacts_button.addEventListener("click", display.bind(this, contacts_text));
-
+contacts_button.addEventListener("click", displayAtSameTime.bind(this, heading_contacts_text));
+contacts_button.addEventListener("click", imageDisplay.bind(this, joji_hugs_a_student));
+contacts_button.addEventListener("click", displayAtSameTime.bind(this, table_chapters));
+contacts_button.addEventListener("click", displayAtSameTime.bind(this, table_leaders));
+contacts_button.addEventListener("click", displayAtSameTime.bind(this, email_form));
+//email_form.addEventListener("click", function!!!);

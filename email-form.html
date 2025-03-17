@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="email-form.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Red Hat Display">
+</head>
+<body>
+    <h1>Send a message.</h1>
+    <div class="contact_container">
+       <form action="https://api.web3forms.com/submit" method="POST" class="contact">
+            <div class="contact_title">
+                <h2>Get in touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="3cfa4ed1-d103-4436-b1d4-d3a4f7062f25">
+            <input type="text" name="name" placeholder="Your Name" class="contact_inputs" required>
+            <input type="text" name="email" placeholder="Your Email" class="contact_inputs" required>
+            <textarea name="message" placeholder="Your Message" class="contact_inputs" required></textarea>
+            <button type="submit">Submit</button>
+            <a id="button_go_back" href="index.html">Back</a>
+        </form>
+        <div class="right_side">
+            <img src="pink_blur_children.png" alt="pink blur and children looking into camera">
+        </div>
+    </div>
+</body>
+</html>
