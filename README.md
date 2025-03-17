@@ -1,1 +1,2 @@
 # tassel-website-final
+I made this website for TASSEL Cambodia, an international nonprofit organization that teaches children in rural Cambodia English. I'm a part of CV's TASSEL branch, so I thought this would be a cool way to connect two interests of mine: TASSEL and computer science. Hopefully, this resource will prove to be useful for students, teachers and other volunteers alike! This is also my first independent project using javascript, html and css to make a website.
